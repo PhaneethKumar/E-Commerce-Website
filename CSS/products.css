@@ -805,7 +805,8 @@ a {
     gap: 20px;
   }
 
-  .top-bar-content, .contact-info {
+  .top-bar-content,
+  .contact-info {
     flex-direction: column;
     align-items: center;
   }
