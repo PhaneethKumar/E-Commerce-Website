@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="passwordIn">Password</label>
                     <div class="password-input">
                         <input type="password" id="passwordIn" name="password" autocomplete="current-password"
                             placeholder="Enter your password"
@@ -77,11 +77,12 @@
         </div>
     </div>
 
-    <script src="./JS/script.js">
+    <script src="./JS/script.js"></script>
+    <script>
         document.getElementById("loginForm").addEventListener("submit", function (e) {
             e.preventDefault();
             const email = document.getElementById("email").value.trim();
-            const password = document.getElementById("password").value.trim();
+            const password = document.getElementById("passwordIn").value.trim();
             let users = JSON.parse(localStorage.getItem("users")) || [];
             const validUser = users.find(user =>
                 user.email === email && user.password === password
