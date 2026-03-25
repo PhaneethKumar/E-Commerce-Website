@@ -49,6 +49,12 @@ body {
 }
 
 .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group {
   margin-bottom: 20px;
 }
 
@@ -78,6 +84,13 @@ body {
   border-color: #23a6f0;
   background: white;
   box-shadow: 0 0 0 3px rgba(35, 166, 240, 0.1);
+}
+
+.form-group p{
+  font-size: 12px;
+  color: #E74040;
+  padding: 12px 8px;
+  font-weight: 500;
 }
 
 .password-input {
